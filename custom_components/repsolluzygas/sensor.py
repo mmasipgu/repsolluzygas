@@ -31,12 +31,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
                 RepsolLuzYGazEntity(client, 'Amount Variable', 'amountVariable', '€',  False),
                 RepsolLuzYGazEntity(client, 'Amount Fixed', 'amountFixed', '€',  False),
                 RepsolLuzYGazEntity(client, 'Average daily amount', 'averageAmount', '€',  False),
-                RepsolLuzYGazEntity(client, 'Number of contracts', 'number_of_contracts', '',  False),
-                RepsolLuzYGazEntity(client, 'Last invoice', 'last_invoice_amount', '€',  False),
-                RepsolLuzYGazEntity(client, 'Last invoice was paid', 'last_invoice_paid', '',  False)], True)
+                RepsolLuzYGazEntity(client, 'Number of contracts', 'number_of_contracts', '',  False)], True)
                 
-
-
 class RepsolLuzYGazEntity(Entity):
 
     def __init__(self, client, name, variable, unit, is_master):
