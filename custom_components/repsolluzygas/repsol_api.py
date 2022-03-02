@@ -178,7 +178,7 @@ class RepsolLuzYGasSensor():
             data['averageAmount'] = round(float(data['amount'] / response['totalDays']),2)
             data['number_of_contracts'] = contracts['number_of_contracts']
 
-        if len(contracts) > 0:
+        if len(contracts) < 0:
             invoices = self.get_invoices(uid, signature, tstamp, contracts['house_id'], contract['contract_id'])
             data['last_invoice_amount'] = invoices[0]['amount']
             data['last_invoice_paid'] = invoices[0]['status'] == 'PAID'
