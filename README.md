@@ -6,7 +6,7 @@ A platform which allows you to get data from Repsol Luz y Gas website.
 ## Changelog
 ### Version 1.1 - 05/03/2022:
 - Removed 2 sensor: Last Invoice Amount (Numeric) and Last Invoice Status (Boolean).
-This fails if you don't have any invoice yet.
+This fails if you don't have any invoice yet (New Clients).
 
 ### Version 1.1 - 06/12/2021:
 - Added 2 new sensors: Last Invoice Amount (Numeric) and Last Invoice Status (Boolean).
